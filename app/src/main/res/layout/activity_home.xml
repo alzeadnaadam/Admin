@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:padding="50px"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_logout_24" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/new_category_btn"
+        style="@android:style/Widget.Button"
+        android:background="@color/white"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="50px"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="New Category"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/new_product_btn"
+        style="@android:style/Widget.Button"
+        android:background="@color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="50px"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="New Product"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Orders"
+        android:textColor="@color/white"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+    <EditText
+        android:id="@+id/edSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/search_edt_background"
+        android:drawableStart="@drawable/search"
+        android:drawableEnd="@drawable/microphone"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Search Phone"
+        android:inputType="text"
+        android:padding="12dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp"
+        tools:ignore="RtlCompat" />
+    <ListView
+        android:id="@+id/ListView"
+        android:layout_marginTop="20dp"
+        android:dividerHeight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
